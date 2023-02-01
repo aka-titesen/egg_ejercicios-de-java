@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjercicioExtra4">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="entidad" visibility="public" isAbstract="true" xPosition="-366.0" yPosition="52.0">
+      <Fields>
+        <Field name="anhoIncorporacion" type="LocalDate" visibility="protected"/>
+        <Field name="despacho" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="estadoCivil"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getAnhoIncorporacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoIncorporacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+        </Method>
+        <Method name="getDespacho" returnType="int" visibility="public"/>
+        <Method name="setDespacho" returnType="void" visibility="public">
+          <Argument type="int" name="despacho"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEstadoCivil" returnType="String" visibility="public"/>
+        <Method name="setEstadoCivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadoCivil"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="estadoCivil" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Estudiante" package="entidad" visibility="public" xPosition="42.0" yPosition="-313.0">
+      <Fields>
+        <Field name="curso" type="String" visibility="private"/>
+        <Field name="contadorEstudiante" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="curso"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="curso"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="estadoCivil"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCurso" returnType="String" visibility="public"/>
+        <Method name="setCurso" returnType="void" visibility="public">
+          <Argument type="String" name="curso"/>
+        </Method>
+        <Method name="getContadorEstudiante" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setContadorEstudiante" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="contadorEstudiante"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEstadoCivil" returnType="String" visibility="public"/>
+        <Method name="setEstadoCivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadoCivil"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="estadoCivil" returnType="String" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="entidad" visibility="public" isAbstract="true" xPosition="-165.0" yPosition="-155.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="apellido" type="String" visibility="protected"/>
+        <Field name="estadoCivil" type="String" visibility="protected"/>
+        <Field name="id" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="estadoCivil"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEstadoCivil" returnType="String" visibility="public"/>
+        <Method name="setEstadoCivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadoCivil"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="estadoCivil" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="PersonalDeServicio" package="entidad" visibility="public" xPosition="-265.0" yPosition="-242.0">
+      <Fields>
+        <Field name="seccion" type="String" visibility="private"/>
+        <Field name="contadorPersonalDeServicio" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="seccion"/>
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="seccion"/>
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="estadoCivil"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="seccion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSeccion" returnType="String" visibility="public"/>
+        <Method name="setSeccion" returnType="void" visibility="public">
+          <Argument type="String" name="seccion"/>
+        </Method>
+        <Method name="getContadorPersonalDeServicio" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setContadorPersonalDeServicio" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="contadorPersonalDeServicio"/>
+        </Method>
+        <Method name="getAnhoIncorporacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoIncorporacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+        </Method>
+        <Method name="getDespacho" returnType="int" visibility="public"/>
+        <Method name="setDespacho" returnType="void" visibility="public">
+          <Argument type="int" name="despacho"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEstadoCivil" returnType="String" visibility="public"/>
+        <Method name="setEstadoCivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadoCivil"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="estadoCivil" returnType="String" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Profesor" package="entidad" visibility="public" xPosition="-291.0" yPosition="-50.0">
+      <Fields>
+        <Field name="materia" type="String" visibility="private"/>
+        <Field name="contadorProfesor" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="materia"/>
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="materia"/>
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+          <Argument type="int" name="despacho"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="estadoCivil"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="materia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMateria" returnType="String" visibility="public"/>
+        <Method name="setMateria" returnType="void" visibility="public">
+          <Argument type="String" name="materia"/>
+        </Method>
+        <Method name="getContadorProfesor" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setContadorProfesor" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="contadorProfesor"/>
+        </Method>
+        <Method name="getAnhoIncorporacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoIncorporacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoIncorporacion"/>
+        </Method>
+        <Method name="getDespacho" returnType="int" visibility="public"/>
+        <Method name="setDespacho" returnType="void" visibility="public">
+          <Argument type="int" name="despacho"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEstadoCivil" returnType="String" visibility="public"/>
+        <Method name="setEstadoCivil" returnType="void" visibility="public">
+          <Argument type="String" name="estadoCivil"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="estadoCivil" returnType="String" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="principal" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ServicioDeFacultad" package="servicio" visibility="public" xPosition="686.0" yPosition="122.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="private"/>
+        <Field name="estudiantes" type="List&lt;Estudiante&gt;" visibility="private"/>
+        <Field name="profesores" type="List&lt;Profesor&gt;" visibility="private"/>
+        <Field name="personalDeServicios" type="List&lt;PersonalDeServicio&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="crearEstudiante" returnType="Estudiante" visibility="public"/>
+        <Method name="crearProfesor" returnType="Profesor" visibility="public"/>
+        <Method name="crearPersonalDeServicio" returnType="PersonalDeServicio" visibility="public"/>
+        <Method name="tipoDePersonal" returnType="void" visibility="public"/>
+        <Method name="menu" returnType="void" visibility="public"/>
+        <Method name="menuCambiarInformacion" returnType="void" visibility="public"/>
+        <Method name="cambiarInformacionTipoPersonal" returnType="void" visibility="public">
+          <Argument type="int" name="tipoPersonal"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="personalDeServicios" source="servicio.ServicioDeFacultad" target="entidad.PersonalDeServicio" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;PersonalDeServicio&gt;"/>
+    <UseRelation source="servicio.ServicioDeFacultad" target="entidad.Profesor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.Profesor" target="entidad.Empleado"/>
+    <IsRelation name="is" source="entidad.Estudiante" target="entidad.Persona"/>
+    <UseRelation source="servicio.ServicioDeFacultad" target="entidad.PersonalDeServicio" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.PersonalDeServicio" target="entidad.Empleado"/>
+    <HasRelation name="profesores" source="servicio.ServicioDeFacultad" target="entidad.Profesor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Profesor&gt;"/>
+    <UseRelation source="servicio.ServicioDeFacultad" target="entidad.Estudiante" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.Empleado" target="entidad.Persona"/>
+    <HasRelation name="estudiantes" source="servicio.ServicioDeFacultad" target="entidad.Estudiante" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Estudiante&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

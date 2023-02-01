@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ejercicio3">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="entidad" visibility="public" xPosition="25.0" yPosition="-6.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+        <Field name="radio" type="double" visibility="private"/>
+        <Field name="perimetro" type="double" visibility="private"/>
+        <Field name="area" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+          <Argument type="double" name="perimetro"/>
+          <Argument type="double" name="area"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadio" returnType="double" visibility="public"/>
+        <Method name="setRadio" returnType="void" visibility="public">
+          <Argument type="double" name="radio"/>
+        </Method>
+        <Method name="getPerimetro" returnType="double" visibility="public"/>
+        <Method name="setPerimetro" returnType="void" visibility="public">
+          <Argument type="double" name="perimetro"/>
+        </Method>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="double" name="area"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="crearCirculo" returnType="Circulo" visibility="public"/>
+        <Method name="perimetroCirculo" returnType="void" visibility="public"/>
+        <Method name="areaCirculo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangulo" package="entidad" visibility="public" xPosition="399.0" yPosition="89.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="package"/>
+        <Field name="base" type="double" visibility="private"/>
+        <Field name="altura" type="double" visibility="private"/>
+        <Field name="perimetro" type="double" visibility="private"/>
+        <Field name="area" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="altura"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="altura"/>
+          <Argument type="double" name="perimetro"/>
+          <Argument type="double" name="area"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBase" returnType="double" visibility="public"/>
+        <Method name="setBase" returnType="void" visibility="public">
+          <Argument type="double" name="base"/>
+        </Method>
+        <Method name="getAltura" returnType="double" visibility="public"/>
+        <Method name="setAltura" returnType="void" visibility="public">
+          <Argument type="double" name="altura"/>
+        </Method>
+        <Method name="getPerimetro" returnType="double" visibility="public"/>
+        <Method name="setPerimetro" returnType="void" visibility="public">
+          <Argument type="double" name="perimetro"/>
+        </Method>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="setArea" returnType="void" visibility="public">
+          <Argument type="double" name="area"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="crearRectangulo" returnType="Rectangulo" visibility="public"/>
+        <Method name="perimetroRectangulo" returnType="void" visibility="public"/>
+        <Method name="areaRectangulo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="principal" visibility="public" xPosition="1059.0" yPosition="182.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="CalculoCirculo" package="interfaz" visibility="public" xPosition="518.0" yPosition="12.0">
+      <Methods>
+        <Method name="perimetroCirculo" returnType="void" visibility="package" isAbstract="true"/>
+        <Method name="areaCirculo" returnType="void" visibility="package" isAbstract="true"/>
+      </Methods>
+    </Interface>
+    <Interface name="CalculoRectangulo" package="interfaz" visibility="public" xPosition="749.0" yPosition="12.0">
+      <Methods>
+        <Method name="perimetroRectangulo" returnType="void" visibility="package" isAbstract="true"/>
+        <Method name="areaRectangulo" returnType="void" visibility="package" isAbstract="true"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="entidad.Rectangulo" target="entidad.Rectangulo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="entidad.Rectangulo" target="interfaz.CalculoRectangulo"/>
+    <UseRelation source="entidad.Circulo" target="entidad.Circulo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="entidad.Circulo" target="interfaz.CalculoCirculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

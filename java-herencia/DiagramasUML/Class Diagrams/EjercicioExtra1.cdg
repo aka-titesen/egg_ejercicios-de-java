@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EjercicioExtra1">
+  <ClassDiagramComponents>
+    <Class name="Alquiler" package="entidad" visibility="public" isAbstract="true" xPosition="-166.0" yPosition="-19.0">
+      <Fields>
+        <Field name="nombreCliente" type="String" visibility="protected"/>
+        <Field name="dniCliente" type="Integer" visibility="protected"/>
+        <Field name="fechaAlquiler" type="LocalDate" visibility="protected"/>
+        <Field name="fechaDevolucion" type="LocalDate" visibility="protected"/>
+        <Field name="posicionAmarre" type="int" visibility="protected"/>
+        <Field name="precio" type="double" visibility="protected"/>
+        <Field name="matricula" type="String" visibility="protected"/>
+        <Field name="eslora" type="int" visibility="protected"/>
+        <Field name="anhoFabricacion" type="LocalDate" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreCliente"/>
+          <Argument type="Integer" name="dniCliente"/>
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+          <Argument type="int" name="posicionAmarre"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="eslora"/>
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombreCliente" returnType="String" visibility="public"/>
+        <Method name="setNombreCliente" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCliente"/>
+        </Method>
+        <Method name="getDniCliente" returnType="Integer" visibility="public"/>
+        <Method name="setDniCliente" returnType="void" visibility="public">
+          <Argument type="Integer" name="dniCliente"/>
+        </Method>
+        <Method name="getFechaAlquiler" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaAlquiler" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+        </Method>
+        <Method name="getFechaDevolucion" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaDevolucion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+        </Method>
+        <Method name="getPosicionAmarre" returnType="int" visibility="public"/>
+        <Method name="setPosicionAmarre" returnType="void" visibility="public">
+          <Argument type="int" name="posicionAmarre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+        <Method name="getEslora" returnType="int" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="int" name="eslora"/>
+        </Method>
+        <Method name="getAnhoFabricacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoFabricacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Method>
+        <Method name="precioBase" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Amotor" package="entidad" visibility="public" xPosition="-710.0" yPosition="145.0">
+      <Fields>
+        <Field name="cv" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cv"/>
+          <Argument type="String" name="nombreCliente"/>
+          <Argument type="Integer" name="dniCliente"/>
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+          <Argument type="int" name="posicionAmarre"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="eslora"/>
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCv" returnType="int" visibility="public"/>
+        <Method name="setCv" returnType="void" visibility="public">
+          <Argument type="int" name="cv"/>
+        </Method>
+        <Method name="getNombreCliente" returnType="String" visibility="public"/>
+        <Method name="setNombreCliente" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCliente"/>
+        </Method>
+        <Method name="getDniCliente" returnType="Integer" visibility="public"/>
+        <Method name="setDniCliente" returnType="void" visibility="public">
+          <Argument type="Integer" name="dniCliente"/>
+        </Method>
+        <Method name="getFechaAlquiler" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaAlquiler" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+        </Method>
+        <Method name="getFechaDevolucion" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaDevolucion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+        </Method>
+        <Method name="getPosicionAmarre" returnType="int" visibility="public"/>
+        <Method name="setPosicionAmarre" returnType="void" visibility="public">
+          <Argument type="int" name="posicionAmarre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+        <Method name="getEslora" returnType="int" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="int" name="eslora"/>
+        </Method>
+        <Method name="getAnhoFabricacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoFabricacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Method>
+        <Method name="precioBase" returnType="double" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Velero" package="entidad" visibility="public" xPosition="-126.0" yPosition="364.0">
+      <Fields>
+        <Field name="mastiles" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="mastiles"/>
+          <Argument type="String" name="nombreCliente"/>
+          <Argument type="Integer" name="dniCliente"/>
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+          <Argument type="int" name="posicionAmarre"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="eslora"/>
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMastiles" returnType="int" visibility="public"/>
+        <Method name="setMastiles" returnType="void" visibility="public">
+          <Argument type="int" name="mastiles"/>
+        </Method>
+        <Method name="getNombreCliente" returnType="String" visibility="public"/>
+        <Method name="setNombreCliente" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCliente"/>
+        </Method>
+        <Method name="getDniCliente" returnType="Integer" visibility="public"/>
+        <Method name="setDniCliente" returnType="void" visibility="public">
+          <Argument type="Integer" name="dniCliente"/>
+        </Method>
+        <Method name="getFechaAlquiler" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaAlquiler" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+        </Method>
+        <Method name="getFechaDevolucion" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaDevolucion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+        </Method>
+        <Method name="getPosicionAmarre" returnType="int" visibility="public"/>
+        <Method name="setPosicionAmarre" returnType="void" visibility="public">
+          <Argument type="int" name="posicionAmarre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+        <Method name="getEslora" returnType="int" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="int" name="eslora"/>
+        </Method>
+        <Method name="getAnhoFabricacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoFabricacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Method>
+        <Method name="precioBase" returnType="double" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Yate" package="entidad" visibility="public" xPosition="134.0" yPosition="418.0">
+      <Fields>
+        <Field name="cv" type="int" visibility="private"/>
+        <Field name="camarotes" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cv"/>
+          <Argument type="int" name="camarotes"/>
+          <Argument type="String" name="nombreCliente"/>
+          <Argument type="Integer" name="dniCliente"/>
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+          <Argument type="int" name="posicionAmarre"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="matricula"/>
+          <Argument type="int" name="eslora"/>
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCv" returnType="int" visibility="public"/>
+        <Method name="setCv" returnType="void" visibility="public">
+          <Argument type="int" name="cv"/>
+        </Method>
+        <Method name="getCamarotes" returnType="int" visibility="public"/>
+        <Method name="setCamarotes" returnType="void" visibility="public">
+          <Argument type="int" name="camarotes"/>
+        </Method>
+        <Method name="getNombreCliente" returnType="String" visibility="public"/>
+        <Method name="setNombreCliente" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCliente"/>
+        </Method>
+        <Method name="getDniCliente" returnType="Integer" visibility="public"/>
+        <Method name="setDniCliente" returnType="void" visibility="public">
+          <Argument type="Integer" name="dniCliente"/>
+        </Method>
+        <Method name="getFechaAlquiler" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaAlquiler" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaAlquiler"/>
+        </Method>
+        <Method name="getFechaDevolucion" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaDevolucion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaDevolucion"/>
+        </Method>
+        <Method name="getPosicionAmarre" returnType="int" visibility="public"/>
+        <Method name="setPosicionAmarre" returnType="void" visibility="public">
+          <Argument type="int" name="posicionAmarre"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+        <Method name="setMatricula" returnType="void" visibility="public">
+          <Argument type="String" name="matricula"/>
+        </Method>
+        <Method name="getEslora" returnType="int" visibility="public"/>
+        <Method name="setEslora" returnType="void" visibility="public">
+          <Argument type="int" name="eslora"/>
+        </Method>
+        <Method name="getAnhoFabricacion" returnType="LocalDate" visibility="public"/>
+        <Method name="setAnhoFabricacion" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="anhoFabricacion"/>
+        </Method>
+        <Method name="precioBase" returnType="double" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="principal" visibility="public" xPosition="860.0" yPosition="23.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ServicioAlquiler" package="servicio" visibility="public" xPosition="1053.0" yPosition="169.0">
+      <Fields>
+        <Field name="registrosAlquiler" type="List&lt;Alquiler&gt;" visibility="private"/>
+        <Field name="leer" type="Scanner" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRegistrosAlquiler" returnType="List&lt;Alquiler&gt;" visibility="public"/>
+        <Method name="setRegistrosAlquiler" returnType="void" visibility="public">
+          <Argument type="List&lt;Alquiler&gt;" name="registrosAlquiler"/>
+        </Method>
+        <Method name="crearAmotor" returnType="Amotor" visibility="public"/>
+        <Method name="crearVelero" returnType="Velero" visibility="public"/>
+        <Method name="crearYate" returnType="Yate" visibility="public"/>
+        <Method name="seleccionarTipoBarco" returnType="void" visibility="public">
+          <Argument type="int" name="tipoDeBarco"/>
+        </Method>
+        <Method name="menu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="servicio.ServicioAlquiler" target="entidad.Yate" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="servicio.ServicioAlquiler" target="entidad.Velero" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.Amotor" target="entidad.Alquiler"/>
+    <HasRelation name="registrosAlquiler" source="servicio.ServicioAlquiler" target="entidad.Alquiler" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Alquiler&gt;"/>
+    <UseRelation source="servicio.ServicioAlquiler" target="entidad.Amotor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.Yate" target="entidad.Alquiler"/>
+    <UseRelation source="servicio.ServicioAlquiler" target="entidad.Alquiler" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidad.Velero" target="entidad.Alquiler"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
